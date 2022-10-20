@@ -11,8 +11,10 @@ provider "aws" {
   region = "ap-southeast-1"
 }
 
-resource "aws_instance""myec2" {
+resource "aws_instance" "myec2" {
   ami = var.ec2_ami_id
-  aws_instance_type = var.instance_type
+  instance_type = var.instance_type
  
+
+  
 }
